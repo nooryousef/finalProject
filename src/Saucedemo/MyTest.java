@@ -1,7 +1,5 @@
 package Saucedemo;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class MyTest extends Parameter {
-	Parameter Swag=new Parameter();
+	Parameter Swag =new Parameter();
 	
 @BeforeTest
 public void SetUp() {
@@ -59,6 +57,7 @@ public void AddToCart() {
 			
 		WebElement Choose=driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket"));
 		Choose.click();
+		
 			
 			
 		}
@@ -67,6 +66,7 @@ public void AddToCart() {
 			
 			WebElement Choosetwo=driver.findElement(By.id("add-to-cart-sauce-labs-onesie"));
 			Choosetwo.click();
+			
 		}
 		
 	} 
@@ -85,7 +85,7 @@ public void CheckOut() {
 	Checkout.click();
 
 	WebElement Firstname = driver.findElement(By.id("first-name"));
-	WebElement Lastname = driver.findElement(By.id("last-name"));
+	WebElement Lastname = driver.findElement(By.xpath("//input[@id='last-name']"));
 	WebElement Post = driver.findElement(By.id("postal-code"));
 
 	Firstname.sendKeys(Swag.fname);
@@ -111,6 +111,7 @@ public void CheckOut() {
 
 @AfterTest
 public void Ending() {
+	
 }
 
 }
