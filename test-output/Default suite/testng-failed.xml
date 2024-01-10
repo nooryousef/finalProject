@@ -5,8 +5,7 @@
     <classes>
       <class name="Saucedemo.MyTest">
         <methods>
-          <include name="CheckOut"/>
-          <include name="FilterItems"/>
+          <include name="AddToCart"/>
           <include name="SetUp"/>
           <include name="Ending"/>
         </methods>
